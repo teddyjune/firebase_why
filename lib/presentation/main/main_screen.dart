@@ -30,10 +30,7 @@ class MainScreen extends StatelessWidget {
             ),
             Expanded(
               child: FirestoreListView<Memo>(
-                query: FirebaseFirestore.instance.collection('memos').withConverter<Memo>(
-                  fromFirestore: (snapshot, _) => Memo.fromJson(snapshot.data()!),
-                  toFirestore: (memo, _) => memo.toJson(),
-                ),
+                query: _query(),
                 itemBuilder: (context, snapshot) {
                   final memo = snapshot.data();
                   return ListTile(
@@ -47,5 +44,15 @@ class MainScreen extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  Query<Memo> _query() {
+    return FirebaseFirestore.instance
+        .collection('memos')
+        .where('uid', isEqualTo: FirebaseAuth.instance.currentUser?.uid!)
+        .withConverter<Memo>(
+          fromFirestore: (snapshot, _) => Memo.fromJson(snapshot.data()!),
+          toFirestore: (memo, _) => memo.toJson(),
+        );
   }
 }
