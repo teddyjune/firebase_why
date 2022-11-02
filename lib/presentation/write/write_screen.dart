@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:firebase_why/presentation/write/write_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -35,7 +37,8 @@ class _WriteScreenState extends State<WriteScreen> {
                 borderRadius: BorderRadius.circular(16.0),
               ),
               suffixIcon: IconButton(
-                onPressed: () => viewModel.write(inputTextController.text),
+                onPressed: () => viewModel.write(
+                    inputTextController.text, '${Random().nextDouble()}'),
                 icon: const Icon(Icons.send),
               ),
               hintText: '글을 쓰세요',
