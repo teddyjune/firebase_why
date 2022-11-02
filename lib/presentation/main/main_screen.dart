@@ -23,7 +23,7 @@ class MainScreen extends StatelessWidget {
             ElevatedButton(
               onPressed: () => context.go('/write'),
               //go는 replace, push는 위로 올라온다.
-              child: const Text('Log out'),
+              child: const Text('글쓰기'),
             ),
           ],
         ),
