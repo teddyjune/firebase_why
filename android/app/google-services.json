@@ -1,0 +1,206 @@
+{
+  "project_info": {
+    "project_number": "245549996846",
+    "project_id": "instagram-clone-44873",
+    "storage_bucket": "instagram-clone-44873.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245549996846:android:5dc6a81c1a78564fbfb8bf",
+        "android_client_info": {
+          "package_name": "com.example.firebase_why"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245549996846-va5g89d9u0u9aptuftb6it7d18l36tur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH7MC3HX9crgmyfJG4CUvlXpD21S7BrKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245549996846-va5g89d9u0u9aptuftb6it7d18l36tur.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "245549996846-3ue27757vakstu08puu82mr1h4ctds0f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterLocalNotification"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245549996846:android:d9661216b78b8866bfb8bf",
+        "android_client_info": {
+          "package_name": "com.example.flutter_local_notification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245549996846-va5g89d9u0u9aptuftb6it7d18l36tur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH7MC3HX9crgmyfJG4CUvlXpD21S7BrKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245549996846-va5g89d9u0u9aptuftb6it7d18l36tur.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "245549996846-3ue27757vakstu08puu82mr1h4ctds0f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterLocalNotification"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245549996846:android:6035ef612856ec06bfb8bf",
+        "android_client_info": {
+          "package_name": "com.example.image_search_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245549996846-4hi19udt26suu3qf4l75t9lrb5gdjnaf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.image_search_app",
+            "certificate_hash": "68d494cafaa618e50168c67f9cc766deb710fcf6"
+          }
+        },
+        {
+          "client_id": "245549996846-bk3t2epanim7anp8tfccp3i7jkcvq3su.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.image_search_app",
+            "certificate_hash": "2ce89299a79ccba2b53e79483e1e4c77a14e2324"
+          }
+        },
+        {
+          "client_id": "245549996846-va5g89d9u0u9aptuftb6it7d18l36tur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH7MC3HX9crgmyfJG4CUvlXpD21S7BrKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245549996846-va5g89d9u0u9aptuftb6it7d18l36tur.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "245549996846-3ue27757vakstu08puu82mr1h4ctds0f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterLocalNotification"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245549996846:android:b24d23a5df75587dbfb8bf",
+        "android_client_info": {
+          "package_name": "com.example.instagram_clone_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245549996846-va5g89d9u0u9aptuftb6it7d18l36tur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH7MC3HX9crgmyfJG4CUvlXpD21S7BrKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245549996846-va5g89d9u0u9aptuftb6it7d18l36tur.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "245549996846-3ue27757vakstu08puu82mr1h4ctds0f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterLocalNotification"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245549996846:android:2b916a8eecf43615bfb8bf",
+        "android_client_info": {
+          "package_name": "com.example.untitled"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245549996846-va5g89d9u0u9aptuftb6it7d18l36tur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH7MC3HX9crgmyfJG4CUvlXpD21S7BrKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245549996846-va5g89d9u0u9aptuftb6it7d18l36tur.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "245549996846-3ue27757vakstu08puu82mr1h4ctds0f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterLocalNotification"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
