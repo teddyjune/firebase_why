@@ -1,3 +1,4 @@
+import 'package:firebase_why/presentation/write/write_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 
@@ -10,6 +11,12 @@ final GoRouter router = GoRouter(
       path: '/',
       builder: (BuildContext context, GoRouterState state) {
         return const AuthGate();
+      },
+    ),
+    GoRoute(
+      path: '/write',
+      builder: (BuildContext context, GoRouterState state) {
+        return const WriteScreen();
       },
     ),
   ],

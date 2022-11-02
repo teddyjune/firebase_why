@@ -10,6 +10,23 @@ class WriteScreen extends StatefulWidget {
 class _WriteScreenState extends State<WriteScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('글쓰기'),
+      ),
+      body: Column(
+        children: [
+          TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(16.0),
+              ),
+              suffixIcon: const Icon(Icons.send),
+              hintText: '글을 쓰세요',
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
