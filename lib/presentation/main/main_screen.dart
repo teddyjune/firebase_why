@@ -33,9 +33,22 @@ class MainScreen extends StatelessWidget {
                 query: _query(),
                 itemBuilder: (context, snapshot) {
                   final memo = snapshot.data();
-                  return ListTile(
-                    title: Text(memo.title),
-                    subtitle: Text(memo.body),
+                  return Dismissible(
+                    key: UniqueKey(),
+                    onDismissed: (DismissDirection direction) {
+                      FirebaseFirestore.instance
+                          .collection('memos')
+                          .doc(memo.uid)
+                          .delete();
+                    },
+                    background: Container(
+                      alignment: Alignment.centerLeft,
+                      color: Colors.greenAccent,
+                    ),
+                    child: ListTile(
+                      title: Text(memo.title),
+                      subtitle: Text(memo.body),
+                    ),
                   );
                 },
               ),
@@ -47,9 +60,10 @@ class MainScreen extends StatelessWidget {
   }
 
   Query<Memo> _query() {
+    //계속 바라보는 리얼타임 코드
     return FirebaseFirestore.instance
         .collection('memos')
-        .where('uid', isEqualTo: FirebaseAuth.instance.currentUser?.uid!)
+        .where('uid', isEqualTo: FirebaseAuth.instance.currentUser?.uid ?? '')
         .withConverter<Memo>(
           fromFirestore: (snapshot, _) => Memo.fromJson(snapshot.data()!),
           toFirestore: (memo, _) => memo.toJson(),
