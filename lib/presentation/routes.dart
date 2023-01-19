@@ -1,3 +1,4 @@
+import 'package:firebase_why/presentation/main/main_screen.dart';
 import 'package:firebase_why/presentation/write/write_screen.dart';
 import 'package:firebase_why/presentation/write/write_view_model.dart';
 import 'package:flutter/cupertino.dart';
@@ -12,7 +13,7 @@ final GoRouter router = GoRouter(
     GoRoute(
       path: '/',
       builder: (BuildContext context, GoRouterState state) {
-        return const AuthGate();
+        return const MainScreen();
       },
     ),
     GoRoute(

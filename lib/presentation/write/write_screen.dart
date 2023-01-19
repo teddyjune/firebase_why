@@ -30,18 +30,21 @@ class _WriteScreenState extends State<WriteScreen> {
       ),
       body: Column(
         children: [
-          TextField(
-            controller: inputTextController,
-            decoration: InputDecoration(
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16.0),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              controller: inputTextController,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(16.0),
+                ),
+                suffixIcon: IconButton(
+                  onPressed: () => viewModel.write(
+                      inputTextController.text, '${Random().nextDouble()}'),
+                  icon: const Icon(Icons.send),
+                ),
+                hintText: '글을 쓰세요',
               ),
-              suffixIcon: IconButton(
-                onPressed: () => viewModel.write(
-                    inputTextController.text, '${Random().nextDouble()}'),
-                icon: const Icon(Icons.send),
-              ),
-              hintText: '글을 쓰세요',
             ),
           )
         ],

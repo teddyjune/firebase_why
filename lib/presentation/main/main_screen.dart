@@ -12,17 +12,19 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: const Text('메인'),
+        actions: [
+          IconButton(
+              onPressed: () {
+                FirebaseAuth.instance.signOut();
+              },
+              icon: const Icon(Icons.logout)),
+        ],
       ),
       body: Center(
         child: Column(
           children: [
-            ElevatedButton(
-              onPressed: () {
-                FirebaseAuth.instance.signOut();
-              },
-              child: const Text('Log out'),
-            ),
             ElevatedButton(
               onPressed: () => context.go('/write'),
               //go는 replace, push는 위로 올라온다.
